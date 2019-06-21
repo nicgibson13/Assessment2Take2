@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		7CA80E8522BD719B000F3938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA80E8422BD719B000F3938 /* AppDelegate.swift */; };
-		7CA80E8722BD719B000F3938 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA80E8622BD719B000F3938 /* ViewController.swift */; };
 		7CA80E8A22BD719B000F3938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA80E8822BD719B000F3938 /* Main.storyboard */; };
 		7CA80E8D22BD719B000F3938 /* Assessment2Take2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7CA80E8B22BD719B000F3938 /* Assessment2Take2.xcdatamodeld */; };
 		7CA80E8F22BD719C000F3938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CA80E8E22BD719C000F3938 /* Assets.xcassets */; };
 		7CA80E9222BD719C000F3938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA80E9022BD719C000F3938 /* LaunchScreen.storyboard */; };
+		7CA80E9B22BD71F2000F3938 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA80E9A22BD71F2000F3938 /* CoreDataStack.swift */; };
+		7CA80E9D22BD7210000F3938 /* Item+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA80E9C22BD7210000F3938 /* Item+Convenience.swift */; };
+		7CA80EA022BD7322000F3938 /* ItemListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA80E9F22BD7322000F3938 /* ItemListTableViewController.swift */; };
+		7CA80EA322BD7382000F3938 /* ItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA80EA222BD7382000F3938 /* ItemController.swift */; };
+		7CA80EA622BD76A7000F3938 /* ItemListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA80EA522BD76A7000F3938 /* ItemListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7CA80E8122BD719B000F3938 /* Assessment2Take2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assessment2Take2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA80E8422BD719B000F3938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7CA80E8622BD719B000F3938 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7CA80E8922BD719B000F3938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7CA80E8C22BD719B000F3938 /* Assessment2Take2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Assessment2Take2.xcdatamodel; sourceTree = "<group>"; };
 		7CA80E8E22BD719C000F3938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CA80E9122BD719C000F3938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CA80E9322BD719C000F3938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CA80E9A22BD71F2000F3938 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		7CA80E9C22BD7210000F3938 /* Item+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+Convenience.swift"; sourceTree = "<group>"; };
+		7CA80E9F22BD7322000F3938 /* ItemListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListTableViewController.swift; sourceTree = "<group>"; };
+		7CA80EA222BD7382000F3938 /* ItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemController.swift; sourceTree = "<group>"; };
+		7CA80EA522BD76A7000F3938 /* ItemListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				7CA80E8322BD719B000F3938 /* Assessment2Take2 */,
-				7CA80E8222BD719B000F3938 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,20 +58,58 @@
 				7CA80E8122BD719B000F3938 /* Assessment2Take2.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		7CA80E8322BD719B000F3938 /* Assessment2Take2 */ = {
 			isa = PBXGroup;
 			children = (
-				7CA80E8422BD719B000F3938 /* AppDelegate.swift */,
-				7CA80E8622BD719B000F3938 /* ViewController.swift */,
+				7CA80E8222BD719B000F3938 /* Products */,
+				7CA80E9922BD71A7000F3938 /* Resources */,
 				7CA80E8822BD719B000F3938 /* Main.storyboard */,
+				7CA80EA422BD7385000F3938 /* Model Controller */,
+				7CA80EA122BD7326000F3938 /* View Controller */,
+				7CA80E9E22BD7272000F3938 /* Models */,
+			);
+			path = Assessment2Take2;
+			sourceTree = "<group>";
+		};
+		7CA80E9922BD71A7000F3938 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7CA80E8422BD719B000F3938 /* AppDelegate.swift */,
 				7CA80E8E22BD719C000F3938 /* Assets.xcassets */,
 				7CA80E9022BD719C000F3938 /* LaunchScreen.storyboard */,
 				7CA80E9322BD719C000F3938 /* Info.plist */,
-				7CA80E8B22BD719B000F3938 /* Assessment2Take2.xcdatamodeld */,
 			);
-			path = Assessment2Take2;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7CA80E9E22BD7272000F3938 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7CA80E8B22BD719B000F3938 /* Assessment2Take2.xcdatamodeld */,
+				7CA80E9A22BD71F2000F3938 /* CoreDataStack.swift */,
+				7CA80E9C22BD7210000F3938 /* Item+Convenience.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7CA80EA122BD7326000F3938 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7CA80E9F22BD7322000F3938 /* ItemListTableViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		7CA80EA422BD7385000F3938 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7CA80EA222BD7382000F3938 /* ItemController.swift */,
+				7CA80EA522BD76A7000F3938 /* ItemListTableViewCell.swift */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +183,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CA80E8722BD719B000F3938 /* ViewController.swift in Sources */,
+				7CA80E9D22BD7210000F3938 /* Item+Convenience.swift in Sources */,
+				7CA80EA622BD76A7000F3938 /* ItemListTableViewCell.swift in Sources */,
+				7CA80EA022BD7322000F3938 /* ItemListTableViewController.swift in Sources */,
 				7CA80E8D22BD719B000F3938 /* Assessment2Take2.xcdatamodeld in Sources */,
 				7CA80E8522BD719B000F3938 /* AppDelegate.swift in Sources */,
+				7CA80EA322BD7382000F3938 /* ItemController.swift in Sources */,
+				7CA80E9B22BD71F2000F3938 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +337,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2HLC2FMZN4;
-				INFOPLIST_FILE = Assessment2Take2/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Assessment2Take2/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +355,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2HLC2FMZN4;
-				INFOPLIST_FILE = Assessment2Take2/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Assessment2Take2/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
